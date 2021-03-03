@@ -1,3 +1,4 @@
+import timeit
 import re
 with open("Day 7 input") as Day_7_input:
     Input_Data = [line.strip() for line in Day_7_input.readlines()]

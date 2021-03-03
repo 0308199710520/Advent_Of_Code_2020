@@ -42,6 +42,6 @@ print(trees)
 total = 1
 
 for tree in trees:
-    total = total * tree
+    total *= tree
 
 print(total)
