@@ -58,8 +58,8 @@ for operation in Input:
     if operation[0] in {"N", "S", "E", "W"}:
         waypoint_position = waypoint_translation(waypoint_position, operation[0],operation[1])
         continue
-
-    ship_position = ship_movement(waypoint_position, operation[1], ship_position)
+    if operation[0] == "F":
+        ship_position = ship_movement(waypoint_position, operation[1], ship_position)
 
 
 print(sum([abs(i) for i in ship_position]))
